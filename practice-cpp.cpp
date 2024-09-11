@@ -8,22 +8,6 @@
 
 using namespace std;
 
-void task2();
-void task4();
-void task5();
-void task7();
-void task8();
-void task11();
-void task13();
-void task17();
-void task21();
-void task23();
-
-int main()
-{
-    task23();
-}
-
 void task2()
 {
     float sideA;
@@ -168,9 +152,9 @@ void task13()
         )
     );
 
-    cout << "1-2 : (" << points[3].first << ", " << points[3].second <<")\n";
-    cout << "2-3 : (" << points[4].first << ", " << points[4].second << ")\n";
-    cout << "1-3 : (" << points[5].first << ", " << points[5].second << ")\n";
+    cout << "1-2 : (" << points[3].first << ", " << points[3].second << ")" << endl;
+    cout << "2-3 : (" << points[4].first << ", " << points[4].second << ")" << endl;
+    cout << "1-3 : (" << points[5].first << ", " << points[5].second << ")" << endl;
 }
 
 void task17()
@@ -181,7 +165,7 @@ void task17()
 
     int humans = pow(2, days) - 1;
 
-    cout << "Humans eaten: " << humans << "\n";
+    cout << "Humans eaten: " << humans << endl;
 }
 
 void task21()
@@ -192,7 +176,7 @@ void task21()
 
     int days = floor(log2(words)) + 1;
 
-    cout << "Days taken: " << days << "\n";
+    cout << "Days taken: " << days << endl;
 }
 
 void task23()
@@ -209,7 +193,54 @@ void task23()
     b = a - b;
     a = a - b;
 
-    cout << "a = " << a << "\nb = " << b << "\n";
+    cout << "a = " << a << "\nb = " << b << endl;
+}
+
+int main()
+{
+    int option;
+
+    while (1)
+    {
+        cout << "Options:\n2.\n4.\n5.\n7.\n8.\n11.\n13.\n17.\n21.\n23." << endl;
+        cout << "Selected: ";
+        cin >> option;
+        switch (option)
+        {
+        case 2:
+            task2();
+            break;
+        case 4:
+            task4();
+            break;
+        case 5:
+            task5();
+            break;
+        case 7:
+            task7();
+            break;
+        case 8:
+            task8();
+            break;
+        case 11:
+            task11();
+            break;
+        case 13:
+            task13();
+            break;
+        case 17:
+            task17();
+            break;
+        case 21:
+            task21();
+            break;
+        case 23:
+            task23();
+            break;
+        default:
+            break;
+        }
+    }
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
