@@ -95,6 +95,39 @@ void task2_4()
 	cout << "Результат: " << result << endl;
 }
 
+void task2_6()
+{
+	int a, b, c, x, y, z;
+
+	cout << "2.6" << endl;
+	cout << "Даны целые числа a, b, c, X, Y, Z. В каждый новогодний подарок нужно положить a конфет, b яблок и c печенек. Сколько подарков можно скомплектовать из X конфет, Y яблок и Z печенек?" << endl;
+
+	cout << "a = ";
+	cin >> a;
+	cout << "b = ";
+	cin >> b;
+	cout << "c = ";
+	cin >> c;
+
+	cout << "X = ";
+	cin >> x;
+	cout << "Y = ";
+	cin >> y;
+	cout << "Z = ";
+	cin >> z;
+
+	int result = 0;
+
+	if (a <= 0 || b <= 0 || c <= 0 || x <= 0 || y <= 0 || z <= 0)
+	{
+		cout << "Неправильные данные!" << endl;
+		return;
+	}
+
+	result = min(min(floor(x / a), floor(y / b)), floor(z / c));
+	cout << "Результат: " << result << endl;
+}
+
 void task2_8()
 {
 	double x, y;
@@ -164,16 +197,23 @@ void task2_11()
 	cout << "Счет: " << score << endl;
 }
 
-//void task2_13()
-//{
-//
-//}
-
 void task2_14()
 {
 	int a, b, c, d;
-	cout << "a, b, c, d: " << endl;
-	cin >> a >> b >> c >> d;
+
+	cout << "2.14" << endl;
+	cout << "Даны четыре целых числа, одно из них не равно трём другим, равным между собой. Указать порядковый номер числа, отличного от остальных." << endl;
+
+	cout << "a = ";
+	cin >> a;
+	cout << "b = ";
+	cin >> b;
+	cout << "c = ";
+	cin >> c;
+	cout << "d = ";
+	cin >> d;
+
+	cout << "Результат: " << endl;
 
 	if (a != b && a != c)
 	{
@@ -356,6 +396,41 @@ void task2_19()
 	cout << "Число: " << result << endl;
 }
 
+void task2_22()
+{
+	double k, b, r;
+
+	cout << "2.22" << endl;
+	cout << "Даны вещественные числа k, b и R (R > 0). Найти количество точек пересечения прямой, задаваемой уравнением y=kx+b и окружностью с центром в начале координат и радиусом R." << endl;
+
+	cout << "k =  ";
+	cin >> k;
+	cout << "b =  ";
+	cin	>> b;
+	cout << "r =  ";
+	cin	>> r;
+
+	if (r <= 0)
+	{
+		cout << "Ошибка" << endl;
+		return;
+	}
+
+	double d = k * k * b * b - (k * k + 1) * (b * b - r * r);
+
+	if (d < 0)
+	{
+		cout << "Нет точек пересечения" << endl;
+		return;
+	}
+	if (d == 0)
+	{
+		cout << "Одна точка пересечения" << endl;
+		return;
+	}
+	cout << "Две точки пересечения" << endl;
+}
+
 void task2_23()
 {
 	double a, b, c;
@@ -432,13 +507,22 @@ void task2_27()
 {
 	int a, b, c;
 
-	cout << "a, b, c :" << endl;
-	cin >> a >> b >> c;
+	cout << "2.27" << endl;
+	cout << "Даны целые положительные A, B и C. Какое максимальное число квадратов со стороной С можно разместить в прямоугольнике со сторонами A и B без наложений? Указать площадь занятой квадратами и незанятой частей прямоугольника." << endl;
+
+	cout << "a = ";
+	cin >> a;
+	cout << "b = ";
+	cin >> b;
+	cout << "c = ";
+	cin >> c;
 
 	int count = floor(a / c) * floor(b / c);
 	cout << "Кол-во квадратов: " << count << endl;
 	int area = count * c * c;
-	cout << "Площадь: " << area << endl;
+	cout << "Площадь, занятая квадратами: " << area << endl;
+	int free = a * b - area;
+	cout << "Оставшаяся площадь: " << free << endl;
 }
 
 void task2_29()
@@ -578,7 +662,9 @@ void second()
 
 	// ---
 
+	//task2_6();
 	//task2_14();
+	//task2_22();
 	//task2_27();
 
 }
