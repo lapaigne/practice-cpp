@@ -130,6 +130,7 @@
     <ClCompile Include="first.cpp" />
     <ClCompile Include="practice-cpp.cpp" />
     <ClCompile Include="second.cpp" />
+    <ClCompile Include="third.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="labs.h" />
