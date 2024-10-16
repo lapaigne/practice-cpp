@@ -385,7 +385,7 @@ void task4_15()
 		if (x > mx)
 		{
 			mx = x;
-			count = 0;
+			count = 1;
 		}
 		else if (x == mx)
 		{
@@ -416,13 +416,13 @@ void task4_16()
 		if (x > mx)
 		{
 			mx = x;
-			index == k;
+			index = k;
 		}
 
 		k++;
 	}
 
-	cout << "Кол-во макс. чисел: " << index;
+	cout << "Индекс макс. числа: " << index;
 }
 
 void fourth()
@@ -446,6 +446,6 @@ void fourth()
 	//task4_11();
 	//task4_13();
 	//task4_14();
-	task4_15();
-	//task4_16();
+	//task4_15();
+	task4_16();
 }
