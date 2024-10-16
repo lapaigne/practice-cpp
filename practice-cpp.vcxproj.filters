@@ -27,6 +27,9 @@
     <ClCompile Include="third.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="fourth.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="labs.h">

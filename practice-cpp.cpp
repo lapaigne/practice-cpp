@@ -14,7 +14,8 @@ int main()
 	setlocale(LC_ALL, "Russian");
 	//first();
 	//second();
-	third();
+	//third();
+	fourth();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

@@ -8,6 +8,8 @@ using namespace std;
 
 void task3_1()
 {
+	cout << "3.1" << endl;
+
 	int n;
 	double sum = 0;
 	cout << "N = ";
@@ -25,6 +27,7 @@ void task3_1()
 
 void task3_2()
 {
+	cout << "3.2" << endl;
 	int n;
 	int factorial = 1;
 	double power = 1;
@@ -44,6 +47,7 @@ void task3_2()
 
 void task3_3()
 {
+	cout << "3.3" << endl;
 	int n;
 	double power = 1;
 	double sum = 0;
@@ -63,6 +67,7 @@ void task3_3()
 
 void task3_4()
 {
+	cout << "3.4" << endl;
 	int n;
 	int factorial = 1;
 	double sum = 0;
@@ -80,6 +85,7 @@ void task3_4()
 
 void task3_5()
 {
+	cout << "3.5" << endl;
 	int n;
 	int factorial = 1;
 	double prod = 1;
@@ -97,6 +103,7 @@ void task3_5()
 
 void task3_6()
 {
+	cout << "3.6" << endl;
 	int n;
 	int factorial = 1;
 	double prod = 1;
@@ -116,6 +123,7 @@ void task3_6()
 
 void task3_7()
 {
+	cout << "3.7" << endl;
 	int n;
 	double result = 0;
 	cout << "N = ";
@@ -130,6 +138,7 @@ void task3_7()
 
 void task3_9()
 {
+	cout << "3.9" << endl;
 	int n;
 	double result = 0;
 	cout << "N = ";
@@ -144,6 +153,7 @@ void task3_9()
 
 void task3_10()
 {
+	cout << "3.10" << endl;
 	int n;
 	double result = 0;
 	cout << "N = ";
@@ -159,6 +169,7 @@ void task3_10()
 
 void task3_12()
 {
+	cout << "3.12" << endl;
 	int n;
 	double x;
 
@@ -192,11 +203,12 @@ void task3_12()
 	}
 
 	cout << "Max: " << max << "\t (" << imax << ")" << endl;
-	cout << "Min: " << max << "\t (" << imin << ")" << endl;
+	cout << "Min: " << min << "\t (" << imin << ")" << endl;
 }
 
 void task3_14()
 {
+	cout << "3.14" << endl;
 	int n;
 	int result = 0;
 	int max = 0;
@@ -225,6 +237,7 @@ void task3_14()
 
 void task3_16()
 {
+	cout << "3.16" << endl;
 	int m, n;
 	int count = 0;
 
@@ -258,6 +271,7 @@ void task3_16()
 
 void task3_17()
 {
+	cout << "3.17" << endl;
 	double r;
 	int count = 0;
 
@@ -287,6 +301,7 @@ void task3_17()
 
 void task3_18()
 {
+	cout << "3.18" << endl;
 	double r1, r2;
 	int count = 0;
 	
@@ -317,6 +332,7 @@ void task3_18()
 
 void task3_20()
 {
+	cout << "3.20" << endl;
 	int m, n;
 	
 	cout << "N = ";
@@ -371,5 +387,5 @@ void third()
 	//task3_16();
 	//task3_17();
 	//task3_18();
-	//task3_20();
+	task3_20();
 }

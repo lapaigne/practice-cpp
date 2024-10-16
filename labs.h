@@ -2,3 +2,4 @@
 void first();
 void second();
 void third();
+void fourth();
