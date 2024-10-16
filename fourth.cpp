@@ -333,7 +333,7 @@ void task4_14()
 	while (true)
 	{
 		int x;
-		cout << "x = ";
+		cout << "Число: ";
 		cin >> x;
 
 		if (x == 0)
@@ -385,7 +385,7 @@ void task4_15()
 		if (x > mx)
 		{
 			mx = x;
-			count == 0;
+			count = 0;
 		}
 		else if (x == mx)
 		{
@@ -444,8 +444,8 @@ void fourth()
 	// ---
 
 	//task4_11();
+	//task4_13();
 	//task4_14();
-	task4_13();
-	//task4_15();
+	task4_15();
 	//task4_16();
 }
