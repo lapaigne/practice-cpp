@@ -237,9 +237,14 @@ void task4_10()
 	cout << "N = ";
 	cin >> n;
 
+	if (n < 1)
+	{
+		cout << "Число N должно быть натуральным";
+		return;
+	}
+
 	int mx = -1;
 	int mn = 10;
-	int sum = 0;
 
 	while (true)
 	{
@@ -262,6 +267,12 @@ void task4_11()
 	int n;
 	cout << "N = ";
 	cin >> n;
+
+	if (n < 1)
+	{
+		cout << "Число N должно быть натуральным";
+		return;
+	}
 
 	int pow = 1;
 	int number = 0;
@@ -301,7 +312,7 @@ void task4_13()
 	{
 		if (denomintator > n)
 		{
-				return;
+			return;
 		}
 
 		if (m % denomintator == 0)
@@ -447,5 +458,5 @@ void fourth()
 	//task4_13();
 	//task4_14();
 	//task4_15();
-	task4_16();
+	//task4_16();
 }
