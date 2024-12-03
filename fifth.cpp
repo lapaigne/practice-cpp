@@ -6,6 +6,69 @@
 
 using namespace std;
 
+int sqr(int number)
+{
+	return number * number;
+}
+
+
+bool isSquare(int number)
+{
+	return sqr(round(sqrt(number))) == number;
+}
+
+
+int digitSum(int number)
+{
+	int n = number;
+	int sum = 0;
+
+	while (true)
+	{
+		if (n < 1)
+		{
+			break;
+		}
+
+		sum += n % 10;
+		n /= 10;
+	}
+
+	return sum;
+}
+
+int maxOfThree(int a, int b, int c)
+{
+	return max(max(a, b), c);
+}
+
+
+int maxDigit(int number)
+{
+	int n = number;
+
+	int mx = 0;
+
+	while (true)
+	{
+		if (n < 1)
+		{
+			break;
+		}
+
+		mx = max(mx, n % 10);
+		n /= 10;
+	}
+
+	return mx;
+}
+
+int minOfThree(int a, int b, int c)
+{
+	return min(min(a, b), c);
+}
+
+
 // 5.1
 
 void task5_1()
@@ -38,29 +101,6 @@ void task5_1()
 	}
 }
 
-int digitSum(int number)
-{
-	int n = number;
-	int sum = 0;
-
-	while (true)
-	{
-		if (n < 1)
-		{
-			break;
-		}
-
-		sum += n % 10;
-		n /= 10;
-	}
-
-	return sum;
-}
-
-int maxOfThree(int a, int b, int c)
-{
-	return max(max(a, b), c);
-}
 
 // 5.2
 
@@ -94,29 +134,6 @@ void task5_2()
 	}
 }
 
-int maxDigit(int number)
-{
-	int n = number;
-
-	int mx = 0;
-	
-	while (true)
-	{
-		if (n < 1)
-		{
-			break;
-		}
-
-		mx = max(mx, n % 10);
-		n /= 10;
-	}
-}
-
-int minOfThree(int a, int b, int c)
-{
-	return min(min(a, b), c);
-}
-
 // 5.6
 
 void task5_6()
@@ -133,33 +150,7 @@ void task5_6()
 	cout << "Число b - " << (!isSquare(b) ? "не " : "") << "квадрат" << endl;
 	cout << "Число c - " << (!isSquare(c) ? "не " : "") << "квадрат" << endl;
 }
-
-bool isSquare(int number)
-{
-	return sqr(round(sqrt(number))) == number;
-}
-
-int sqr(int number)
-{
-	return number * number;
-}
-
 // 5.8
-
-void task5_8()
-{
-	int a, b, c;
-	cout << "a = ";
-	cin >> a;
-	cout << "b = ";
-	cin >> b;
-	cout << "c = ";
-	cin >> c;
-
-	cout << "Произведение макс. и мин. цифр числа a: " << prod(minDigit(a), maxDigit(a)) << endl;
-	cout << "Произведение макс. и мин. цифр числа b: " << prod(minDigit(b), maxDigit(b)) << endl;
-	cout << "Произведение макс. и мин. цифр числа c: " << prod(minDigit(c), maxDigit(c)) << endl;
-}
 
 int minDigit(int number)
 {
@@ -177,6 +168,8 @@ int minDigit(int number)
 		mn = min(mn, n % 10);
 		n /= 10;
 	}
+
+	return mn;
 }
 
 int prod(int a, int b)
@@ -184,8 +177,31 @@ int prod(int a, int b)
 	return a * b;
 }
 
-// 5.13
+void task5_8()
+{
+	int a, b, c;
+	cout << "a = ";
+	cin >> a;
+	cout << "b = ";
+	cin >> b;
+	cout << "c = ";
+	cin >> c;
 
+	cout << "Произведение макс. и мин. цифр числа a: " << prod(minDigit(a), maxDigit(a)) << endl;
+	cout << "Произведение макс. и мин. цифр числа b: " << prod(minDigit(b), maxDigit(b)) << endl;
+	cout << "Произведение макс. и мин. цифр числа c: " << prod(minDigit(c), maxDigit(c)) << endl;
+}
+
+// 5.13
+double lineLength(double x1, double y1, double x2, double y2)
+{
+	return sqrt(sqr(x1 - x2) + sqr(y1 - y2));
+}
+
+double midPoint(double a, double b)
+{
+	return .5 * (a + b);
+}
 void task5_13()
 {
 	
@@ -207,15 +223,7 @@ void task5_13()
 	cout << "Длина медианы третьей точки: " << lineLength(x3, y3, midPoint(x2, x1), midPoint(y2, y1)) << endl;
 }
 
-double lineLength(double x1, double y1, double x2, double y2)
-{
-	return sqrt(sqr(x1 - x2) + sqr(y1 - y2));
-}
 
-double midPoint(double a, double b)
-{
-	return .5 * (a + b);
-}
 
 // 5.17
 
