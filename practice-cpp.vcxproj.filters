@@ -33,6 +33,9 @@
     <ClCompile Include="fifth.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="sixth.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="labs.h">
