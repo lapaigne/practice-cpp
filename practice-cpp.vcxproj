@@ -132,6 +132,7 @@
     <ClCompile Include="fourth.cpp" />
     <ClCompile Include="practice-cpp.cpp" />
     <ClCompile Include="second.cpp" />
+    <ClCompile Include="seventh.cpp" />
     <ClCompile Include="sixth.cpp" />
     <ClCompile Include="third.cpp" />
   </ItemGroup>

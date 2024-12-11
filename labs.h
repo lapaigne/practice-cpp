@@ -5,3 +5,4 @@ void third();
 void fourth();
 void fifth();
 void sixth();
+void seventh();

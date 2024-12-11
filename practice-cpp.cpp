@@ -17,7 +17,8 @@ int main()
 	//third();
 	//fourth();
 	//fifth();
-	sixth();
+	//sixth();
+	seventh();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
